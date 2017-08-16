@@ -446,17 +446,7 @@ abstract class Mobilpay_Payment_Request_Abstract {
 	    throw new Exception($errorMessage, self::ERROR_LOAD_X509_CERTIFICATE);
 	}
 	$srcData = $this->_xmlDoc->saveXML();
-	/* 		
-	  $srcData='<?xml version="1.0" encoding="utf-8"?>
-	  <order type="card" id="8002087" timestamp="20130522153032"><signature>LUKM-KG26-347P-B717-9LHY</signature><invoice currency="RON" amount="391.89" installments="1,3,4,6,10,15" selected_installments="4"><details><![CDATA[Comanda+%238002087+la+www.emag.ro]]></details><contact_info><billing type="person"><first_name><![CDATA[Voicu+Adrian]]></first_name><country><![CDATA[ro]]></country><county><![CDATA[Giurgiu]]></county><city><![CDATA[MARSA]]></city><zip_code><![CDATA[000000]]></zip_code><address><![CDATA[str+Principala+nr+20]]></address><email><![CDATA[adrian.voicu88%40yahoo.com]]></email><mobile_phone><![CDATA[0767340812]]></mobile_phone></billing><shipping type="person"/></contact_info></invoice><url><return>http://www.emag.ro/finalizare_comanda_card</return></url></order>
-
-	  ';
-	  $srcData='<?xml version="1.0" encoding="utf-8"?>
-	  <order type="card" id="qp2WqaKcYKeVr5ur2MyckmZsZWmSYp9oYGmmlA%3D%3D" timestamp="20130902153020"><signature>U3WD-DJ6M-1VUA-TCS9-BASY</signature><invoice currency="RON" amount="9.00"><details><![CDATA[Intrare+la+Muzeul+Antipa+la+doar+9+lei%21+Vino+sa+vezi+locul+unde+natura+intalneste+tehnologia+si+cunoasterea%21+Digitalizare%2C+proiectii%2C+sunete+si+lumini%2C+asemenea+unui+muzeu+european%21+Experienta+Antipa+nu+se+uita+usor%21+]]></details><contact_info><billing type="person"><first_name><![CDATA[Laurentiu]]></first_name><last_name><![CDATA[Ghita]]></last_name><country><![CDATA[Romania]]></country><zip_code><![CDATA[111111]]></zip_code><address><![CDATA[lalosu]]></address><email><![CDATA[lgghita%40gmail.com]]></email><mobile_phone><![CDATA[745173887]]></mobile_phone></billing></contact_info></invoice><url><return>http://www.bestdealz.ro/order/card/cardReturn.php</return><confirm>http://www.bestdealz.ro/order/pay-confirm.php</confirm></url></order>
-	  ';
-
-	 * 
-	 */
+	
 	$publicKeys = array(
 	    $publicKey
 	);
