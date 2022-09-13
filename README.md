@@ -50,9 +50,7 @@ data – this is the XML structure presented below, signed with the public certi
 
 Service Endpoints
 
-You should always start the payment by using POST method for redirecting the client to one of these endpoints:
-	standard payment, live mode – https://secure.mobilpay.ro/bitcoin
-	standard payment, test mode – http://sandboxsecure.mobilpay.ro/bitcoin
+You should always start the payment by using POST method for redirecting the client to https://secure.mobilpay.ro/bitcoin
 
 
 
