@@ -47,8 +47,8 @@ require_once 'Mobilpay/Payment/Request/Bitcoin.php';
 require_once 'Mobilpay/Payment/Invoice.php';
 require_once 'Mobilpay/Payment/Address.php';
 
-//for testing purposes, all payment requests will be sent to the sandbox server. Once your account will be active you must switch back to the live server https://secure.mobilpay.ro/bitcoin
-$paymentUrl = 'http://sandboxsecure.mobilpay.ro/bitcoin';
+//all payment requests will be sent to the live server.
+$paymentUrl = 'https://secure.mobilpay.ro/bitcoin';
 
 // this is the path on your server to the public certificate. You may download this from Admin -> Conturi de comerciant -> Detalii -> Setari securitate
 $x509FilePath 	= '<path_to_public_certificate>';
